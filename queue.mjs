@@ -8,17 +8,17 @@ export class Queue {
     if(this.items === 0){
       this.last = this.first = blogpost;
     } else {
-      const temp = last;
+      const temp = this.last;
       temp.next = this.last = blogpost;
     }
-    items++;
+   this.items++;
   }
 
   dequeue() {
     if(this.items === 0) throw new Error("Fila vazia");
-    const temp = first;
+    const temp = this.first;
     this.first = temp.next;
-    items--;
+    this.items--;
     return temp;
   }
 }
