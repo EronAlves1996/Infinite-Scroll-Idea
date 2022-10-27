@@ -18,7 +18,7 @@ main {
 }
 
 .blogpost {
-  width: 70%;
+  width: 40%;
 }
 
 .blogpost h2 {
@@ -26,5 +26,5 @@ main {
 }
 
 p {
-  margin: 1% 0;
+  margin: 4% 0;
 }
